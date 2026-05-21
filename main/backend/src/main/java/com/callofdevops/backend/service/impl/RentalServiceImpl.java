@@ -1,5 +1,10 @@
 package com.callofdevops.backend.service.impl;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+
 import com.callofdevops.backend.dto.RentalDTO;
 import com.callofdevops.backend.entity.Rental;
 import com.callofdevops.backend.entity.User;
@@ -9,12 +14,6 @@ import com.callofdevops.backend.repository.RentalRepository;
 import com.callofdevops.backend.repository.UserRepository;
 import com.callofdevops.backend.repository.VideoGameRepository;
 import com.callofdevops.backend.service.RentalService;
-import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class RentalServiceImpl implements RentalService {

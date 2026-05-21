@@ -1,27 +1,25 @@
 package com.callofdevops.backend.service.impl;
 
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+
 import com.callofdevops.backend.dto.InventoryDTO;
 import com.callofdevops.backend.entity.Inventory;
-import com.callofdevops.backend.entity.VideoGame;
 import com.callofdevops.backend.exception.ResourceNotFoundException;
 import com.callofdevops.backend.repository.InventoryRepository;
 import com.callofdevops.backend.repository.VideoGameRepository;
 import com.callofdevops.backend.service.InventoryService;
-import org.springframework.stereotype.Service;
-
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class InventoryServiceImpl implements InventoryService {
 
     private final InventoryRepository inventoryRepository;
-    private final VideoGameRepository videoGameRepository;
 
     public InventoryServiceImpl(InventoryRepository inventoryRepository, VideoGameRepository videoGameRepository) {
         this.inventoryRepository = inventoryRepository;
-        this.videoGameRepository = videoGameRepository;
     }
 
     @Override
