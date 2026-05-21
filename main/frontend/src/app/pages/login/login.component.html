@@ -1,0 +1,15 @@
+<section class="card">
+  <h1>Ingreso a Call of DevOps</h1>
+  <form (submit)="login(); $event.preventDefault();">
+    <label>
+      Correo
+      <input type="email" [(ngModel)]="email" name="email" required />
+    </label>
+    <label>
+      Contraseña
+      <input type="password" [(ngModel)]="password" name="password" required />
+    </label>
+    <button type="submit">Entrar</button>
+    <p class="error" *ngIf="error">{{ error }}</p>
+  </form>
+</section>

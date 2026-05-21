@@ -1,0 +1,31 @@
+section {
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #d2d6dc;
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.error {
+  color: #d53f8c;
+  margin-top: 1rem;
+}

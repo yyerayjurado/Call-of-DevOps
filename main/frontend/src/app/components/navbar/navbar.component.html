@@ -1,0 +1,6 @@
+<nav class="navbar">
+  <div class="brand">Call of DevOps</div>
+  <div>
+    <button *ngIf="authService.isAuthenticated()" (click)="logout()">Salir</button>
+  </div>
+</nav>

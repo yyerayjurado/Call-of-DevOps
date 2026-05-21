@@ -1,0 +1,19 @@
+<section class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <h2>Catálogo</h2>
+    <div>
+      <input type="text" [(ngModel)]="query" placeholder="Buscar categoría" />
+      <button (click)="search()">Buscar</button>
+    </div>
+  </div>
+</section>
+
+<section class="grid grid-cols-3">
+  <article class="card" *ngFor="let game of games">
+    <h3>{{ game.title }}</h3>
+    <p>{{ game.category }}</p>
+    <p>{{ game.description }}</p>
+    <p><strong>Venta:</strong> {{ game.salePrice | currency:'EUR' }}</p>
+    <p><strong>Alquiler:</strong> {{ game.rentalPrice | currency:'EUR' }}</p>
+  </article>
+</section>

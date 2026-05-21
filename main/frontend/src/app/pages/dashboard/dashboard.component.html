@@ -1,0 +1,13 @@
+<section>
+  <h2>Panel de control</h2>
+  <p>Bienvenido al centro operativo de Call of DevOps.</p>
+</section>
+
+<section class="grid grid-cols-3">
+  <article class="card" *ngFor="let game of featuredGames">
+    <h3>{{ game.title }}</h3>
+    <p>{{ game.category }}</p>
+    <p>{{ game.description }}</p>
+    <p><strong>Precio:</strong> {{ game.salePrice | currency:'EUR' }}</p>
+  </article>
+</section>

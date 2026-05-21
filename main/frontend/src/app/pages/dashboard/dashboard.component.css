@@ -1,0 +1,11 @@
+section {
+  margin-bottom: 1.5rem;
+}
+
+article {
+  transition: transform 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-4px);
+}
